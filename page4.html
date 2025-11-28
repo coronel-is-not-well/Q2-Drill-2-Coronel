@@ -3,57 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>OBMC Enroll Now</title>
 
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <style>
         
-        body{background-image: url(https://i.pinimg.com/1200x/42/a0/93/42a09393a064a4ebd0a739d3583d888b.jpg);
+        body{background-image: url(https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/c4c28d4b-1195-400f-9ecb-ef207ac460cb/DSC07042-HDR.jpg?format=1500w);
             background-size: cover;
             background-repeat: no-repeat;}
+
+        td{margin-right: 10px;}
 
         
     </style>
 
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href=""><img src="https://i.pinimg.com/736x/2a/c4/73/2ac473a312d52e03c53a22e50a2569a3.jpg" alt="Shiz Emblem" class="" style="height: 50px; width: 50px;"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+    
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+<div class="container-fluid">
+  <a class="navbar-brand" href=""><img src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/e01fd0f1-eda0-443b-ab56-74f748469f01/Header.png?format=1500w" alt="OBMC logo" class="" style="height: 50px; width: 200px;"></a>
+    
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
       <span class="navbar-toggler-icon"></span>
-    </button>
+  </button>
+
     <div class="collapse navbar-collapse" id="mynavbar">
+      
       <ul class="navbar-nav me-auto">
+        
         <li class="nav-item">
-          <a class="nav-link" href="page2.html" style="color: rgb(243, 124, 159);">Home</a>
+          <a class="nav-link" href="page2.html" style="color: rgba(2, 74, 133);">Home</a>
         </li>
+
         <li class="nav-item">
-          <a class="nav-link" href="page3.html" style="color: rgb(243, 124, 159);">About Us</a>
+          <a class="nav-link" href="page3.html" style="color: rgba(173, 35, 88);">About Us</a>
         </li>
+
         <li class="nav-item">
-          <a class="nav-link" href="page4.html" style="color: rgb(243, 124, 159)";>Enroll</a>
+          <a class="nav-link" href="page4.html" style="color: rgba(0, 161, 114)";>Enroll</a>
         </li>
+
         <li class="nav-item">
-          <a class="nav-link" href="page5.html" style="color: rgb(243, 124, 159);">Contact Us</a>
+          <a class="nav-link" href="page5.html" style="color: rgba(255, 71, 134);">Contact Us</a>
         </li>
+
       </ul>
+
       <form class="d-flex">
-        <input class="form-control me-2" type="text" placeholder="Search">
-        <button class="btn btn-success" type="button">Search</button>
+
+      <input class="form-control me-2" type="text" placeholder="Search">
+        
+      <button class="btn btn-warning" type="button">Search</button>
+
       </form>
+
     </div>
-  </div>
+
+</div>
+
 </nav>
 
 <br><br>
 
-<div class="container bg-light text-primary">
-    <p class="fw-bold display-4">Enroll</p>
+<div class="container text-primary">
+    
+  <p class="fw-bold display-4">Enroll</p>
+    
+    <form>
+
+     <div class="form-control">
+
+      <h3>Student Information</h3>
+      <br>
+
+      <div class="row gap-3 justify-content-left">
+
+        <div class="col">
+
+            <label for="Name" class="form-label">First Name:</label>
+            <br>
+            <input type="text" name="Name"  placeholder="Type your first name here." required class="form-control">
+
+        </div>
+         
+        <div class="col">
+
+            <label for="Middle Name" class="form-label">Middle Name:</label>
+            <br>
+            <input type="text" name="Name"  placeholder="Type your middle name here." required class="form-control">
+
+        </div>
+
+        <div class="col">
+
+          <label for="Last Name" class="form-label">Last Name:</label>
+          <br>
+          <input type="text" name="Name"  placeholder="Type your last name here." required class="form-control">
+
+        </div>
+
+      </div>
+    
     <br>
-    <blockquote>
-        <span class="lead"></span> Do not be afraid to enroll! There's no such thing as dreaming too far, as long as you don't lose sight of who you are.
+
+    <div class="row gap-3 justify-content-left">
+
+        <div class="col">
+    
+          <label for="Bday" class="form-label">Date of Birth:</label>
+          <br>
+          <input type="date" name="Name"  placeholder="Type your last name here." required class="form-control" style="width: 100%;">
+              
+        </div>
+
+        <div class="col">
+    
+          <label for="Gender" class="form-label">Gender:</label>
+          <br>
+          <select id="Gender" name="Gender" required class="form-control">
+            <option>Select</option>
+						<option>Female</option>
+						<option>Male</option>
+						<option>Other</option>
+					</select>
+              
+        </div>
+
+    <div class="row gap-3 justify-content-left">
+
+        <div class="col">
+      
+          <label for="Grade" class="form-label">Currect Grade Level:</label>
+          <br>
+          <select id="Grade" name="Grade" required class="form-control">
+              <option>Junior Casa</option>
+              <option>Advanced Casa</option>
+              <option>Primary: Grade 1</option>
+              <option>Primary: Grade 2</option>
+              <option>Primary: Grade 3</option>
+              <option>Intermediate: Grade 4</option>
+              <option>Intermediate: Grade 5</option>
+              <option>Intermediate: Grade 6</option>
+              <option>Junior High School: Grade 7</option>
+              <option>Junior High School: Grade 8</option>
+              <option>Junior High School: Grade 9</option>
+              <option>Junior High School: Grade 10</option>
+              <option>Senior High School: Grade 11</option>
+              <option>Senior High School: Grade 12</option>
+          </select>
+
+          <br>
+                
+        </div>
+
+    </div>
+
+    <h3>Contact Details</h3>
+    <br>
+
+      <div class="row gap-3 justify-content-left">
+
+        <div class="col">
+
+            <label for="Email" class="form-label">Email:</label>
+            <br>
+            <input type="email" name="Name"  placeholder="Type your email here." required class="form-control">
+
+        </div>
+         
+        <div class="col">
+
+            <label for="No" class="form-label">Phone Number:</label>
+            <br>
+            <input type="number" name="No"  placeholder="Type your phone number here." required class="form-control">
+
+            <br>
+
+        </div>
+
+      </div>
+
+       
+      <div class="row gap-3 justify-content-left">
+        
+        <h3>Other Information</h3>
+
+        <label for="MOL" class="form-label">Mode of Learning</label>
+				<br>
+
+          <div class="col">
+
+            <input type="radio" id="onl" name="mol" value="onl" required>
+            <label for="coding" class="form-label">Online</label>
+
+          </div>
+          
+          <div class="col">
+
+            <input type="radio" id="ftf" name="mol" value="ftf" required>
+            <label for="robotics" class="form-label">Onsite/Face-to-face</label>
+          
+          </div>
+
+        </div>
+
+        <div class="row gap-3 justify-content-left">
+        
+          <div class="col">
+
+            <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+            <button type="reset" class="btn btn-primary btn-sm">Reset</button>
+        
+          </div>
+
+        </div>
+      
+    </div>
+
+    </form>
+
+</div>
+
+<br>
+
+<p class="text-light" style="text-align: center;"> @ 2025 Enrollment | Maria Coronel 9-Ruby </p>
+
+<br>
 
 </body>
 </html>
